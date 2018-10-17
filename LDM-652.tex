@@ -53,7 +53,7 @@ each providing  different ways to access the data  and analysis services provide
 Although primarily conceived as a platform for scientific analysis of the LSST data in the operations-era, the LSP will also be the major platform for integration and test activities during LSST commissioning,
 and as such, the relevant stakeholders comprise not only members of the scientific community but also the LSST Camera and Commissioning teams.
 
-The objective of this review is to evaluate the vision and design of the LSP against the LSST science requirements and to verify both the current implementation
+The objective of this review is to evaluate the vision and design of the LSP against the LSST science requirements, and to verify both the current implementation
 as well as the design for future planned operations-era aspects of the system.  LSST Data management want to explore how the LSP can best meet the needs of the LSST science user community by
 identifying issues now before committing to further implementation or reprioritization of already-planned work.
 
@@ -62,7 +62,7 @@ identifying issues now before committing to further implementation or reprioriti
 \subsection{Scope of the Review}
 \label{sec:scope}
 This is a design review of the LSST Science Platform (LSP), as defined and described in \citeds{LSE-319}: LSST Science Platform Vision Document.
-The services provided by the LSP can be decomposed into the three different Aspects:
+The services provided by the LSP can be decomposed into the three different ``Aspects'':
 \begin{itemize}
 \item A web Portal designed to provide essential data access and visualization services through a simple-to-use website.
 \item A JupyterLab environment, that will provide a Jupyter Notebook-like interface enabling next-to-the-data analysis.
@@ -126,13 +126,13 @@ The review committee is asked to assess the following items based on the materia
 \begin{enumerate}
 
 % We need to do some work before the review to get this into shape. Our requirements traceability is not great. Would propose to get the key people together and knock it off in a dedicated session
-\item Is the traceability of requirements from higher design documents, e.g., from \citeds{LPM-17}, the LSST Science Requirements Document,
-through to \citeds{LDM-554}, the LSST Science Platform Requirements, complete and will it ensure coverage of the four key LSST science themes?
+\item Is the traceability of requirements from higher design documents, e.g. from \citeds{LPM-17}:The LSST Science Requirements Document,
+through to \citeds{LDM-554}:The LSST Science Platform Requirements, complete and will it ensure coverage of the four key LSST science themes?
 %
 \item Are the stakeholders clearly identified and understood? Have the requirements been prioritized and communicated to the stakeholders?
 %
 % Portal in LDM-554 are the portal requirements. DAX reqs less clear - DMTN-090 - more VO centric design. - Well captured.
-\item Does the design presented in \citeds{LDM-542} capture the requirements for the LSP as detailed in \citeds{LDM-554}?
+\item Does the design presented in \citeds{LDM-542}: LSST Science Platform Design capture the requirements for the LSP as detailed in \citeds{LDM-554}:The LSST Science Platform Requirements?
 %
 \item Are the verification, validation and software quality assurance plans adequate?
 %
@@ -151,7 +151,7 @@ evolve over time with the needs of 21st century astronomy?
 % Note that in the event that  DM descope-10 is enacted prior to this review, this charge question will be reworded to be more specific,  acknowledging that a descope has occured. 
 % The question as to whether the remaining LSP is sufficient will be posed. 
 \item If cuts had to be made, what areas could be de-scoped with minimal implications for LSST science? What is the scope for use of third party-tooling in place of in-house development? 
-\color{red}{If DM-10 is invoked, or if the variant to freeze rather than eliminate the Portal is invoked, this question will be rephrased to reflect accordingly.}
+({\color{red}{Note: If DM-10 is invoked, or if the variant to freeze rather than eliminate the Portal is invoked, this question will be rephrased to reflect accordingly.}})
 
 %\color{red}{(Alternative if DM-10 is approved) In light of the recent implementation of de-scope item DM10: Eliminate the Portal Aspect of the Science Platform, are the the remaining two aspects of the LSP sufficient to 
 %ensure LSST science harvest covering the four key science themes? What, if any, third party-tooling could be substituted for the Portal aspect to ensure that the LSP can deliver the science promise of LSST?}
