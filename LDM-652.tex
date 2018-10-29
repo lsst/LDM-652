@@ -15,15 +15,16 @@
 
 \setDocCompact{true}
 
-\title[Test Spec for \product]{\product~Design Review Charge}
+\title[Charge for \product~Final Design Review]{}
 
 \author{Leanne~P.~Guy}
 \setDocRef{\lsstDocType-\lsstDocNum}
 \setDocDate{\vcsdate}
 
 \setDocAbstract {
-This document provides the charge to the review committee for the \product{} (LSP) Design Review.
-The review will be a formal and internal review of the planned LSP capabilities in the LSST operations era.
+This document provides the charge to the review committee for the \product{} (LSP) Final Design Review (FDR).
+The review will be a formal and internal review of the planned LSP capabilities in the LSST operations era as per the 
+guidelines outlined in \citeds{LDM-294} and \citeds{LSE-159}.
 }
 
 % Most recent last
@@ -45,13 +46,14 @@ The review will be a formal and internal review of the planned LSP capabilities 
 \subsection{Objectives}
 \label{sec:objectives}
 
-The LSST Science Platform is a unified set of web applications and services made available to the scientific community to access, visualize, and perform 'next-to-the-data'
-analysis of the LSST data.
-The platform exposes the LSST data and services to the user through three primary user facing
-``Aspects'' --- the web Portal, the JupyterLab analysis environment, and a machine-accessible Web API interface,
+The LSST Science Platform is a unified set of web applications and services made available to the scientific community 
+to access, visualize, and perform 'next-to-the-data' analysis of the LSST data. The platform exposes the LSST data 
+and services to the user through three primary user facing  ``Aspects'' --- the web Portal, the JupyterLab analysis environment, 
+and a machine-accessible Web API interface,
 each providing  different ways to access the data  and analysis services provided by the LSST Data Access Centers (DACs).
 
-Although primarily conceived as a platform for scientific analysis of the LSST data in the operations-era, the LSP will also be the major platform for integration and test activities during LSST commissioning,
+Although primarily conceived as a platform for scientific analysis of the LSST data in the operations-era, 
+the LSP will also be the major platform for integration and test activities during LSST commissioning, 
 and as such, the relevant stakeholders comprise not only members of the scientific community but also the LSST Camera and Commissioning teams.
 
 The objective of this review is to evaluate the vision and design of the LSP against the LSST science requirements, and to verify both the current implementation
@@ -62,7 +64,7 @@ identifying issues now before committing to further implementation or reprioriti
 % Scope of the review
 \subsection{Scope of the Review}
 \label{sec:scope}
-This is a design review of the LSST Science Platform (LSP), as defined and described in \citeds{LSE-319}: LSST Science Platform Vision Document.
+This is the Final Design Review of the LSST Science Platform (LSP), as defined and described in \citeds{LSE-319}: LSST Science Platform Vision Document.
 The services provided by the LSP can be decomposed into the three different ``Aspects'':
 \begin{itemize}
 \item A web Portal designed to provide essential data access and visualization services through a simple-to-use website.
@@ -107,6 +109,8 @@ All relevant documentation should be provided to the review committee no later t
 \citeds{LSE-61}  & LSST DM Subsystem Requirements (DMSR)  \\
 \citeds{LDM-148} & LSST Data Management System Design \\
 \citeds{LSE-30} & LSST Observatory System Specifications (OSS) \\
+\citeds{LDM-294} & LSST Data Management Organization and Management \\
+\citeds{LSE-159} & LSST Reviews Definitions, Guidelines, and Procedures \\
 \end{tabular}
 
 % references
