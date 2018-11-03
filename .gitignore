@@ -1,3 +1,6 @@
+# Build products deployed to ldm-652.lsst.io
+LDM-652.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
