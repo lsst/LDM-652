@@ -23,7 +23,7 @@
 
 \setDocAbstract {
 This document provides the charge to the review committee for the \product{} (LSP) Final Design Review (FDR).
-The review will be a formal and internal review of the planned LSP capabilities in the LSST operations era as per the 
+The review will be a formal and internal review of the planned LSP capabilities in the LSST operations era as per the
 guidelines outlined in \citeds{LDM-294} and \citeds{LSE-159}.
 }
 
@@ -47,14 +47,14 @@ guidelines outlined in \citeds{LDM-294} and \citeds{LSE-159}.
 \subsection{Objectives}
 \label{sec:objectives}
 
-The LSST Science Platform is a unified set of web applications and services made available to the scientific community 
-to access, visualize, and perform 'next-to-the-data' analysis of the LSST data. The platform exposes the LSST data 
-and services to the user through three primary user facing  ``Aspects'' --- the web Portal, the JupyterLab analysis environment, 
+The LSST Science Platform is a unified set of web applications and services made available to the scientific community
+to access, visualize, and perform 'next-to-the-data' analysis of the LSST data. The platform exposes the LSST data
+and services to the user through three primary user facing  ``Aspects'' --- the web Portal, the JupyterLab analysis environment,
 and a machine-accessible Web API interface,
 each providing  different ways to access the data  and analysis services provided by the LSST Data Access Centers (DACs).
 
-Although primarily conceived as a platform for scientific analysis of the LSST data in the operations-era, 
-the LSP will also be the major platform for integration and test activities during LSST commissioning, 
+Although primarily conceived as a platform for scientific analysis of the LSST data in the operations-era,
+the LSP will also be the major platform for integration and test activities during LSST commissioning,
 and as such, the relevant stakeholders comprise not only members of the scientific community but also the LSST Camera and Commissioning teams.
 
 The objective of this review is to evaluate the vision and design of the LSP against the LSST science requirements, and to verify both the current implementation
@@ -70,20 +70,20 @@ The services provided by the LSP can be decomposed into the three different ``As
 \begin{itemize}
 \item A web Portal designed to provide essential data access and visualization services through a simple-to-use website.
 \item A JupyterLab environment, that will provide a Jupyter Notebook-like interface enabling next-to-the-data analysis.
-\item An extensive set of Web APIs that the users will be able to use to remotely examine the LSST data with familiar tools. 
+\item An extensive set of Web APIs that the users will be able to use to remotely examine the LSST data with familiar tools.
 \end{itemize}
 
-The LSST teams developing the Science Platform --- Science User Interface and Tools (SUIT) at IPAC, 
+The LSST teams developing the Science Platform --- Science User Interface and Tools (SUIT) at IPAC,
 Software Quality and Reliability Engineering (SQuaRE) at LSST-Tucson, and Data Access (DAX) at SLAC --- are
 requested to demonstrate the detailed product design to be realized as well as the realization process.
 
 Science use cases addressing all four of the LSST key science themes --- probing dark energy and dark matter,
 taking an inventory of the Solar System, exploring the transient optical sky, and mapping the Milky Way --- should be addressed.
-These use cases should cover database-oriented data access, data access for large-scale analytics (possibly non-database), 
-bulk data access for non data centers, and user interfaces. 
+These use cases should cover database-oriented data access, data access for large-scale analytics (possibly non-database),
+bulk data access for non data centers, and user interfaces.
 
-It should be noted that the LSST database, Qserv, is considered to be outside the scope of this review; however, 
-certain aspects of the database design can affect the performance of the LSP. Where pertinent, those aspects of the 
+It should be noted that the LSST database, Qserv, is considered to be outside the scope of this review; however,
+certain aspects of the database design can affect the performance of the LSP. Where pertinent, those aspects of the
 Qserv design and expected performance relevant to science users and the ability of the LSP to satisfy the LSST science requirements should be presented.
 
 A representative group of LSST stakeholders will be asked to provide science-oriented feedback and recommendations on the design of the LSST Science Platform.
@@ -160,14 +160,14 @@ to \citeds{LDM-554}: The LSST Science Platform Requirements, complete and will i
 % GPDF should write a note on risks associated with the LSP and pass to  Wil to assimilate.
 \item Are the risks associated with the design of the LSST Science Platform understood and adequately captured? Are there any overlooked areas of risk?
 %
-% Note that in the event that  DM descope-10 is enacted prior to this review, this charge question will be reworded to be more specific,  acknowledging that a descope has occured. 
-% The question as to whether the remaining LSP is sufficient will be posed. 
-\item Are there appropriate scope options accompanying the plan? 
+% Note that in the event that  DM descope-10 is enacted prior to this review, this charge question will be reworded to be more specific,  acknowledging that a descope has occured.
+% The question as to whether the remaining LSP is sufficient will be posed.
+\item Are there appropriate scope options accompanying the plan?
 If cuts had to be made, are there areas of the plan that could be descoped with minimal impact on LSST science?
-What is the scope for use of third party-tooling in place of in-house development? 
+What is the scope for use of third party-tooling in place of in-house development?
 % ({\color{red}{Note: If DM-10 or the variant to freeze rather than eliminate the Portal is invoked, this question will be rephrased to reflect accordingly.}})
 
-%\color{red}{(Alternative if DM-10 is approved) In light of the recent implementation of de-scope item DM10: Eliminate the Portal Aspect of the Science Platform, are the the remaining two aspects of the LSP sufficient to 
+%\color{red}{(Alternative if DM-10 is approved) In light of the recent implementation of de-scope item DM10: Eliminate the Portal Aspect of the Science Platform, are the the remaining two aspects of the LSP sufficient to
 %ensure LSST science harvest covering the four key science themes? What, if any, third party-tooling could be substituted for the Portal aspect to ensure that the LSP can deliver the science promise of LSST?}
 \end{enumerate}
 
@@ -176,9 +176,9 @@ In addition, the committee is asked to provide actionable advice on addressing a
 %%% The committee
 \section{Review Committee Composition}
 The review committee shall be composed of persons external to LSST Data Management
-and who are representative of the LSST DM stakeholders and principal users of the LSST Science Platform. 
-We envisage $sim$ 9 reviewers at most, with representation from static and time-domain science, the LSST Commissioning and Camera teams,  
-and persons with technical experience building astronomical portals \& science archives. 
+and who are representative of the LSST DM stakeholders and principal users of the LSST Science Platform.
+We envisage $sim$ 9 reviewers at most, with representation from static and time-domain science, the LSST Commissioning and Camera teams,
+and persons with technical experience building astronomical portals \& science archives.
 
 % Note stakeholders comprise: LSST science collaborations, cross-subsystem integration, commissioning, early preparation by science collaborations
 
