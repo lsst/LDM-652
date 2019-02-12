@@ -1,5 +1,6 @@
 # Build products deployed to ldm-652.lsst.io
 LDM-652.pdf
+meta.tex
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -25,7 +26,6 @@ LDM-652.pdf
 # *.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
-.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
